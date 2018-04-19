@@ -19,6 +19,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7.2'
   gem 'guard'
   gem 'guard-rspec'
+  gem 'guard-rubycritic'
 end
 
 group :development do
