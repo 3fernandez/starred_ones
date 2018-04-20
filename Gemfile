@@ -22,6 +22,7 @@ group :development, :test do
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-rubycritic'
+  gem 'terminal-notifier-guard'
 end
 
 group :development do
