@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <div class="row align-items-center justify-content-center">
+    <%= form_with url: root_path do |form| %>
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="username" class="col-sm-5 control-label">https://github.com/</label>
+          <%= form.text_field :username, placeholder: "username", class: "form-control" %>
+        </div>
+      </div>
+
+      <br />
+      <div class="form-group">
+        <%= form.submit "Get Starred Repositories", class: "btn btn-primary btn-lg btn-block" %>
+      </div>
+    <% end %>
+  </div>
+</div>
