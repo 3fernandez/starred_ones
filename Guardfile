@@ -42,3 +42,8 @@ guard :rspec, cmd: "bin/rspec" do
     Dir[File.join("**/#{m[1]}.feature")][0] || "spec/acceptance"
   end
 end
+
+guard :rubycritic, cmd: "bin/rubycritic" do
+  watch(%r{^app/(.+)\.rb$})
+  watch(%r{^lib/(.+)\.rb$})
+end
