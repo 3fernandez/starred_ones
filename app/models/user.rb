@@ -16,4 +16,10 @@
 #
 
 class User < ApplicationRecord
+  validates :name, :avatar_url, presence: true
+  validates :username, :email, presence: true, uniqueness: true
+
+  def username=(username)
+    write_attribute(:username, username.downcase) if username
+  end
 end
