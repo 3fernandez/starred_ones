@@ -17,9 +17,9 @@
 
 FactoryBot.define do
   factory :user do
-    name "MyString"
-    username "MyString"
-    email "MyString"
-    avatar_url "MyString"
+    name "Jon Snow"
+    sequence(:username) { |n| "hackersnow#{n}" }
+    sequence(:email) { |n| "jonsnow_#{n}@starred.com" }
+    avatar_url "https://avatars0.githubusercontent.com/u/3706669?v=4"
   end
 end
