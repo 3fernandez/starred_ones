@@ -45,7 +45,7 @@ guard :rspec, cmd: "bin/rspec" do
   end
 end
 
-guard :rubycritic, cmd: "bin/rubycritic" do
+guard :rubycritic, cmd: "bundle exec rubycritic" do
   watch(%r{^app/(.+)\.rb$})
   watch(%r{^lib/(.+)\.rb$})
 end
